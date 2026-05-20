@@ -86,11 +86,13 @@ The following is an English version of the README.
 
 
 # SquadUp
+
 A serverless Discord bot for managing weekly game sessions and community activities.
 
-
 ## Overview
+
 SquadUp is a Discord bot designed for small to medium-sized gaming communities where members frequently play together.
+
 It primarily supports the following features:
 
 - Weekly game recruitment
@@ -100,8 +102,10 @@ It primarily supports the following features:
 
 The bot is implemented using a serverless architecture centered around AWS Lambda and DynamoDB.
 
+---
 
 ## Key Features
+
 - Weekly game recruitment posts
 - Participation status tracking for each week
 - Button-based status registration
@@ -112,16 +116,19 @@ The bot is implemented using a serverless architecture centered around AWS Lambd
 - Automated weekly summaries
 - Schedule management support for gaming communities
 
+---
 
 ## Architecture
 
 ### AWS Services
+
 - AWS Lambda
 - API Gateway
 - DynamoDB
 - EventBridge Scheduler
 
 ### External Services
+
 - Discord API
   - Interaction API
   - Webhooks
@@ -132,7 +139,9 @@ The bot is implemented using a serverless architecture centered around AWS Lambd
 ## Design Improvements
 
 ### Migration from S3 to DynamoDB
+
 Initially, voting data was stored in S3.
+
 However, as new features were added, the following requirements became important:
 
 - Support for multiple communities
@@ -143,6 +152,7 @@ However, as new features were added, the following requirements became important
 As a result, the data storage layer was migrated to DynamoDB.
 
 ### Separation of Lambda Responsibilities
+
 The application was separated into the following Lambda functions:
 
 - Interaction Receiver Lambda
@@ -154,16 +164,22 @@ This improved:
 - Operational visibility
 - Extensibility
 
+---
 
 ## Future Plans
+
 - Add a `/setup` command so users can configure the bot after installation.
 - Allow users to configure the threshold for daily check-in notifications.
 - Improve the flexibility of aggregation slots so users can customize default schedules.
   - Weekdays: 1 slot with no specific time
   - Weekends: 2 slots for daytime and nighttime
 
+---
 
 ## Purpose
+
 This personal project was created to streamline schedule coordination and attendance management within fixed gaming communities.
+
 Previously, availability checks and attendance confirmation depended on individual communication, which made it difficult to track who could participate and who would actually join on the day.
+
 SquadUp aims to simplify community scheduling by handling recruitment, registration, and aggregation directly on Discord.
