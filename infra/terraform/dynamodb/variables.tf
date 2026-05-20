@@ -2,7 +2,7 @@
 
 variable "project_name" {
   type        = string
-  default     = "squadup"
+  default     = "YourProject"
   description = "Project name used as a resource name prefix."
 }
 
