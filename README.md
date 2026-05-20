@@ -104,7 +104,7 @@ SquadUpでは、Discord上で募集・参加登録・集計を行うことで、
 
 
 ---
-
+---
 
 
 ## English Version
