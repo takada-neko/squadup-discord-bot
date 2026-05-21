@@ -18,15 +18,13 @@ variable "environment" {
 
 variable "purpose" {
   type        = string
-  default     = "weekly-post"
-  description = "Purpose of the EventBridge Scheduler."
+  default     = "general"
+  description = "Purpose of the EventBridge Scheduler. Example: weekly-post, daily-checkin."
 }
 
 variable "schedule_expression" {
   type        = string
-  # default   = "cron(30 12 ? * MON *)"  # 毎週月曜12:30
-  # default   = "rate(1 day)"             # 1日ごと
-  description = "Schedule expression for EventBridge Scheduler."
+  description = "Schedule expression for EventBridge Scheduler. Example: cron(30 12 ? * MON *), rate(1 day)."
 }
 
 variable "schedule_timezone" {

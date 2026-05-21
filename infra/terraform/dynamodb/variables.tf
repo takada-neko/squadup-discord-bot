@@ -18,7 +18,7 @@ variable "environment" {
 variable "purpose" {
   type        = string
   default     = "general"
-  description = "Purpose of the resource. Example: vote, checkin, schedule."
+  description = "Purpose of the resource. Example: vote, checkin, schedule, general."
 }
 
 variable "hash_key_name" {
