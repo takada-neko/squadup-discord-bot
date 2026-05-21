@@ -24,7 +24,8 @@ variable "purpose" {
 
 variable "schedule_expression" {
   type        = string
-  default     = "cron(30 12 ? * MON *)"
+  # default   = "cron(30 12 ? * MON *)"  # 毎週月曜12:30
+  # default   = "rate(1 day)"             # 1日ごと
   description = "Schedule expression for EventBridge Scheduler."
 }
 
