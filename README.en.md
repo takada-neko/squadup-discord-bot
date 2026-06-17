@@ -1,3 +1,4 @@
+**English** | [日本語](README.md)
 # 🎮 SquadUp — Discord Game Scheduling Bot
 
 **A serverless Discord bot for automating weekly game recruitment, participation management, and daily check-ins.**
